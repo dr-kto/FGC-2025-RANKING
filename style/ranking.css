@@ -1,0 +1,179 @@
+*,
+*::after,
+*::before 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+body 
+{
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    background-color: #ecf0f3;
+    color: #a0a5a8;
+}
+.logo1 
+{
+}
+.title 
+{
+}
+.logo2 
+{
+}
+.background 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: blue;
+}
+.container
+{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+header,
+footer
+{
+    overflow: hidden;
+    width: 100%;
+    height: 18vh;
+    background-color: white;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+header div,
+footer div 
+{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 18vh;
+}
+
+
+.title
+{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    
+}
+h1
+{
+    font-size: 3.5vw;
+    color: darkolivegreen;
+    font-family: sans-serif;
+    margin: 0 auto;
+}
+span 
+{
+    font-size: 2.2vw;
+}
+main
+{
+    margin: 1vw;
+    width: 97%;
+    border-radius: 1em;
+    background-color: aliceblue;
+    overflow-y: auto;
+    height: 100%;
+}
+img
+{
+    object-fit: contain;
+    object-position: 0;
+    /* display: block; */
+    height: 40%;
+    max-width: 100%;
+}
+table
+{
+    background-color: rgb(255, 251, 250);
+    width: 100%;
+    padding: 0 ;
+    font-family: sans-serif;
+    font-size: 1.3vw;
+    position: relative;
+}
+main::-webkit-scrollbar
+{
+    display: none;
+}
+main thead th{
+    position: sticky;
+    top: 0;
+    color: #000;
+}
+main thead th:nth-child(2),
+main tbody th:nth-child(2)
+{
+    text-align: start;
+}
+table {
+    width: 100%;
+}
+th{
+    padding: 2vw 16px;
+    border-bottom: 1px solid #ccc;
+}
+th{
+    background: rgb(255, 251, 250);
+}
+@keyframes scroll {
+    0% {
+        transform: translateY(0%);
+    }
+    49% {
+        transform: translateY(-87%);
+    }
+    51% {
+        transform: translateY(-87%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+thead {
+    position: relative;
+    z-index: 999;
+}
+.scrolling {
+    animation: scroll 60s linear;
+
+}
+.go_left {
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+    background-color: #a0a5a8;
+    top:45%;
+    right: 0;
+    border-radius: 50%;
+    color: #ccc;
+    text-align: center;
+    padding-top: 1vw;
+}
+.dNone {
+    height: 0px;
+}
