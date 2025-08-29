@@ -46,7 +46,7 @@ async function getData()
 {
     try {
         const output = document.querySelector('.output')
-        const sheetsURL = 'https://docs.google.com/spreadsheets/d/1nlZug92ipYAeZMa-BLZAMMJWIT8-Q6FBq8D-wP17Cy0'
+        const sheetsURL = 'https://docs.google.com/spreadsheets/d/1q9YZIl1YUqhMrcwPzgeVKkoVWZKz1odplr54rP2TUVE'
         let sheetsName = 'SORTED RANKING'
         const query = encodeURIComponent('Select * ')
         const url = sheetsURL + '/gviz/tq?'+'tqx=out:txt&sheet=' + sheetsName + '&tq=' + query;
